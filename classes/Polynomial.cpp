@@ -21,3 +21,18 @@ double Polynomial::value(int x) {
     }
     return value;
 }
+
+bool Polynomial::operator==(const Polynomial &rhs) const {
+    if(this->polynomial.size() != rhs.polynomial.size())
+        return false;
+    int size = this->polynomial.size();
+    for (int i = 0; i < size; ++i){
+        if(this->polynomial[i] != rhs.polynomial[i])
+            return false;
+    }
+    return true;
+}
+
+bool Polynomial::operator!=(const Polynomial &rhs) const {
+    return !(rhs == *this);
+}

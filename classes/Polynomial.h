@@ -16,6 +16,9 @@ public:
     const vector<pair<int, int> > &getPolynomial() const;
     void setPolynomial(const vector<pair<int, int> > &polynomial);
     double value(const int x);
+
+    bool operator==(const Polynomial &rhs) const;
+    bool operator!=(const Polynomial &rhs) const;
 };
 
 
