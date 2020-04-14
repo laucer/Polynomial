@@ -15,6 +15,7 @@ public:
     Polynomial(const vector<pair<int, int> > &polynomial);
     const vector<pair<int, int> > &getPolynomial() const;
     void setPolynomial(const vector<pair<int, int> > &polynomial);
+    double value(const int x);
 };
 
 
