@@ -64,3 +64,20 @@ TEST(PolynomialTest, testValueOfPolynomialShouldBe90) {
                            {3, 3}});
     EXPECT_EQ(90, polynomial.value(3));
 }
+
+TEST(PolynomialTest, testDerivativeOfConst) {
+    Polynomial polynomial({{3, 0}});
+    Polynomial expectedResult({{0, 0}});
+    EXPECT_EQ(expectedResult, polynomial.derivative());
+}
+
+
+TEST(PolynomialTest, testDerivative) {
+    Polynomial polynomial({{3, 0},
+                           {3, 1},
+                           {4, 2}});
+    Polynomial expectedResult({{0, 0},
+                               {3, 0},
+                               {8, 1}});
+    EXPECT_EQ(expectedResult, polynomial.derivative());
+}
