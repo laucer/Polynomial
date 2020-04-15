@@ -6,6 +6,7 @@
 #define POLYNOMIALS_SERIALIZER_H
 
 #include "includes.h"
+#include "Polynomial.h"
 
 class Serializer {
 public:

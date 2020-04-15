@@ -6,11 +6,13 @@
 #define POLYNOMIALS_NEWTONSOLVER_H
 
 #include "includes.h"
+#include "Polynomial.h"
 
 class NewtonSolver {
 public:
-    vector<double> solve(Polynomial &polynomial, vector<double> startingPoints);
-
+    set<double> solve(Polynomial &polynomial);
+private:
+    vector<double> generateStartingPoints();
 };
 
 

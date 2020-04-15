@@ -3,6 +3,7 @@
 //
 #include "../classes/includes.h"
 #include "gtest/gtest.h"
+#include "../classes/Polynomial.h"
 
 TEST(PolynomialTest, test1AreEqualTrue) {
     Polynomial polynomial1({{1, 0},
