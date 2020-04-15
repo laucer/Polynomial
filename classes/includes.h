@@ -8,8 +8,10 @@
 #include<bits/stdc++.h>
 #include <fstream>
 #include "Polynomial.h"
+#include "NewtonSolver.h"
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
+
 using namespace std;
 
 #endif //POLYNOMIALS_INCLUDES_H

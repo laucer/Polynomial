@@ -4,11 +4,12 @@
 
 #ifndef POLYNOMIALS_NEWTONSOLVER_H
 #define POLYNOMIALS_NEWTONSOLVER_H
+
 #include "includes.h"
 
-class NewtonSolver{
+class NewtonSolver {
 public:
-    vector<double> solve(const Polynomial &polynomial, const vector<pair<int,int>> startingPoints);
+    vector<double> solve(Polynomial &polynomial, vector<double> startingPoints);
 
 };
 
